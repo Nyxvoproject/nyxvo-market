@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909"><title>NYXVO PROJECT — Digital Market</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-bg"></div>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">N</span><span>NYXVO <b>PROJECT</b><small>DIGITAL SERVICE MARKET</small></span></a><button id="menuBtn" class="menu-btn" aria-label="Buka menu">☰</button><nav id="nav"><a href="#services">Layanan</a><a href="#order">Pesan</a><a href="#check">Cek Pesanan</a></nav></header>
+<main>
+<section class="hero">
+<div class="eyebrow"><i></i> SYSTEM ONLINE · V1.0</div>
+<div class="hero-layout"><div><p class="overline">SECURE ACCESS PORTAL</p><h1>YOUR DIGITAL<br><span>MARKETPLACE.</span></h1><p class="hero-copy">Layanan digital dalam satu tempat. Pilih layanan, kirim detail pesanan, dan pantau statusnya dengan mudah.</p><div class="hero-actions"><a class="btn primary" href="#services">Jelajahi Layanan ↗</a><a class="btn ghost" href="#check">Cek Pesanan</a></div></div><div class="orb"><div class="orb-core">NX<span>›</span></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="orb-caption">NYXVO / NODE_01</div></div></div>
+<div class="stats"><div><strong>03</strong><span>KATEGORI</span></div><div><strong>24/7</strong><span>ORDER ONLINE</span></div><div><strong>SECURE</strong><span>DATA CHECK</span></div></div>
+</section>
+<section class="section" id="services"><div class="section-head"><div><p class="overline">/ CATALOG</p><h2>PILIH <span>LAYANAN</span></h2></div><p class="muted">Harga demo dapat diubah di server.js sebelum website dipublikasikan.</p></div>
+<div class="filters"><button class="filter active" data-filter="Semua">Semua</button><button class="filter" data-filter="Sosial Media">Sosial Media</button><button class="filter" data-filter="Nomor Virtual">Nomor Virtual</button><button class="filter" data-filter="Aplikasi Digital">Aplikasi Digital</button></div>
+<div id="serviceGrid" class="service-grid"><div class="loading">Memuat katalog…</div></div>
+</section>
+<section class="section order-section" id="order"><div class="section-head"><div><p class="overline">/ NEW TRANSACTION</p><h2>BUAT <span>PESANAN</span></h2></div><span class="tag">ORDER FORM</span></div>
+<form id="orderForm" class="panel form-grid"><label>Nama / kontak<input name="customer" required maxlength="100" placeholder="Nama atau kontak kamu"></label><label>Pilih layanan<select name="service_id" id="serviceSelect" required><option value="">Memuat layanan…</option></select></label><label class="wide">Target / detail pesanan<input name="target" required maxlength="500" placeholder="Username, URL profil, negara nomor, atau detail lisensi"></label><label>Jumlah<input name="quantity" type="number" min="1" max="10000" value="1" required></label><div class="price-box"><span>Estimasi total</span><strong id="estimate">Rp0</strong></div><p class="fine wide">Jangan masukkan password akun atau kode OTP ke formulir. Untuk nomor virtual, gunakan hanya secara legal dan sesuai aturan layanan terkait.</p><button class="btn primary wide" type="submit">BUAT PESANAN ↗</button><div id="orderResult" class="result wide" aria-live="polite"></div></form>
+</section>
+<section class="section" id="check"><div class="section-head"><div><p class="overline">/ TRACKING</p><h2>CEK <span>PESANAN</span></h2></div></div><form id="checkForm" class="panel check-form"><label>ID Pesanan<input name="id" required placeholder="Contoh: NYX-A1B2C3D4"></label><button class="btn ghost" type="submit">PERIKSA STATUS</button><div id="checkResult" class="result wide" aria-live="polite"></div></form></section>
+</main>
+<footer><div class="brand"><span class="brand-mark">N</span><span>NYXVO <b>PROJECT</b><small>DIGITAL SERVICE MARKET</small></span></div><p>© 2026 Nyxvo Project · Starter storefront</p><p class="fine">Pemrosesan otomatis memerlukan integrasi provider resmi dan payment gateway. Status demo tidak berarti pesanan telah dikirim.</p></footer>
+<script src="app.js"></script>
+</body></html>
